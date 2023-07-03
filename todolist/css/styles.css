@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 20px;
+    margin-top: 10px;
+    outline: none; /* removes the outline when the input is focused */
+}
+
+button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.checkbox:disabled:checked {
+    background-color: #4CAF50;
+    color: green;
+}
+
+.button-remove {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-edit {
+    background-color: orange; /* changed background color to orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+a, a:visited {
+    color: white; 
+}
+
+select {
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+}

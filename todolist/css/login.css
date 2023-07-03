@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box, .register-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #f90;
+    font-size: 12px;
+}
+
+a {
+    display: inline-block;
+    background: #f90;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+a:hover {
+    background-color: #ffcc00;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    border: none;
+    margin-left: 50px;
+    font-size: 16px;
+}
